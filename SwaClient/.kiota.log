@@ -1,0 +1,7 @@
+Error: KiotaBuilder OpenAPI error:  - schema is not a valid property at #/paths/~1projects~1{projectId}~1collections~1{collectionId}~1records~1{recordId}~1content/put/requestBody/content/multipart~1form-data/schema/properties/request/items
+Error: KiotaBuilder OpenAPI error:  - schema is not a valid property at #/paths/~1projects~1{projectId}~1collections~1{collectionId}~1records~1{recordId}~1inDocumentSearch/put/requestBody/content/multipart~1form-data/schema/properties/request/items
+Error: KiotaBuilder OpenAPI error:  - schema is not a valid property at #/paths/~1projects~1{projectId}~1collections~1{collectionId}~1records~1insertRemoveTransaction/post/requestBody/content/multipart~1form-data/schema/properties/request
+Error: KiotaBuilder OpenAPI error:  - schema is not a valid property at #/paths/~1projects~1{projectId}~1collections~1{collectionId}~1records~1bulkInsertRemoveTransaction~1{indexingBufferId}~1buffer/post/requestBody/content/multipart~1form-data/schema/properties/request
+Error: KiotaBuilder OpenAPI error: #/info/contact/email - The string 'opentext support contact' MUST be in the format of an email address.
+Error: KiotaBuilder OpenAPI error: #/paths/~1projects~1{projectId}~1collections~1{collectionId}~1searchToken/delete/responses - Responses must contain at least one response
+Error: KiotaBuilder OpenAPI error: #/paths/~1projects~1{projectId}~1collections~1{collectionId}~1searchToken~1sortOrderSnapshot/post/responses - Responses must contain at least one response
