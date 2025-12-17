@@ -566,13 +566,6 @@ This library is auto-generated from an OpenAPI specification using Kiota. To reg
 
 ## Troubleshooting
 
-Running into issues? We've documented all the fixes:
-
-- **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Comprehensive troubleshooting guide
-- **[AUTHENTICATION_FIX.md](AUTHENTICATION_FIX.md)** - How we fixed the authentication issue
-- **[SESSION_MANAGEMENT.md](SESSION_MANAGEMENT.md)** - Automatic session capture and reuse
-- **[FIXES_SUMMARY.md](FIXES_SUMMARY.md)** - Summary of all issues fixed
-
 Common issues we've already fixed:
 - ✅ HTTP/2 protocol errors → Use `http2=False`
 - ✅ SSL certificate issues → Use `verify=False` (dev) or provide cert path
