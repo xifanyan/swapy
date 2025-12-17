@@ -192,7 +192,7 @@ async def test_api():
         try:
             projects = await client.projects.get()
             print("✅ Retrieved projects using session!")
-            print(f"   Response: {projects[:100]}...")
+            print(f"   Response: {projects}")
         except Exception as e:
             print(f"❌ Failed to get projects: {type(e).__name__}")
             print(f"   Details: {e}")
@@ -208,8 +208,23 @@ async def test_api():
             print(f"❌ Failed to get projects: {type(e).__name__}")
             print(f"   Details: {e}")
 
+        # Test 3.5: Get field information for a specific collection
+        print("\n[TEST 4] Testing fields endpoint...")
+        print("  → Getting fields for singleMindServer.demo00001/default...")
+        try:
+            fields = (
+                await client.projects.by_project_id("singleMindServer.demo00001")
+                .collections.by_collection_id("default")
+                .fields.get()
+            )
+            print("✅ Retrieved fields!")
+            print(f"   Response: {fields}...")
+        except Exception as e:
+            print(f"❌ Failed to get fields: {type(e).__name__}")
+            print(f"   Details: {e}")
+
         # Test 4: Logout
-        print("\n[TEST 4] Testing logout endpoint...")
+        print("\n[TEST 5] Testing logout endpoint...")
         try:
             logout_response = (
                 await client.logout.delete()
